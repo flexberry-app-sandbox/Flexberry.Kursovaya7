@@ -47,7 +47,8 @@ export let defineProjections = function (modelClass) {
     состояние: attr('Состояние', { index: 1 }),
     idР: attr('Id Р', { index: 2 }),
     остаток: belongsTo('i-i-s-kursovaya7-остаток', 'Остаток', {
-      номер: attr('Номер', { index: 4, hidden: true })
+      номер: attr('Номер', { index: 4, hidden: true }),
+      колво: attr('Колво', { index: 5 })
     }, { index: 3, displayMemberPath: 'номер' })
   });
 
@@ -56,7 +57,8 @@ export let defineProjections = function (modelClass) {
     состояние: attr('Состояние', { index: 1 }),
     idР: attr('Id Р', { index: 2 }),
     остаток: belongsTo('i-i-s-kursovaya7-остаток', 'Номер', {
-      номер: attr('Номер', { index: 3 })
+      номер: attr('Номер', { index: 3 }),
+      колво: attr('Колво', { index: 4 })
     }, { index: -1, hidden: true })
   });
 };

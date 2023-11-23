@@ -14,6 +14,9 @@ export default {
         __caption__: 'Остаток',
         номер: {
           __caption__: 'Номер'
+        },
+        колво: {
+          __caption__: 'Колво'
         }
       }
     },
@@ -31,6 +34,9 @@ export default {
         __caption__: 'Номер',
         номер: {
           __caption__: 'Номер'
+        },
+        колво: {
+          __caption__: 'Колво'
         }
       }
     }

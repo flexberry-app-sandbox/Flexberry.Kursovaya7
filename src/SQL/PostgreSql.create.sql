@@ -14,8 +14,8 @@ CREATE TABLE Резервуар (
 
 CREATE TABLE Покупка (
  primaryKey UUID NOT NULL,
- Сумма DOUBLE PRECISION NULL,
  Количество DOUBLE PRECISION NULL,
+ Сумма DOUBLE PRECISION NULL,
  Остаток UUID NOT NULL,
  БазаКлиента UUID NOT NULL,
  ЦенноваяСтела UUID NOT NULL,

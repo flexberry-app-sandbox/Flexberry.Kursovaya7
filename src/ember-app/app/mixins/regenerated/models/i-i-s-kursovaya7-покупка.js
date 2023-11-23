@@ -53,11 +53,31 @@ export let ValidationRules = {
 export let defineProjections = function (modelClass) {
   modelClass.defineProjection('ПокупкаE', 'i-i-s-kursovaya7-покупка', {
     сумма: attr('Сумма', { index: 0 }),
-    количество: attr('Количество', { index: 1 })
+    количество: attr('Количество', { index: 1 }),
+    базаКлиента: belongsTo('i-i-s-kursovaya7-база-клиента', 'БазаКлиента', {
+      логин: attr('Логин', { index: 3 })
+    }, { index: 2 }),
+    остаток: belongsTo('i-i-s-kursovaya7-остаток', 'Остаток', {
+      колво: attr('Колво', { index: 5 })
+    }, { index: 4 }),
+    ценноваяСтела: belongsTo('i-i-s-kursovaya7-ценновая-стела', 'ЦенноваяСтела', {
+      наименование: attr('Наименование', { index: 7 }),
+      цена: attr('Цена', { index: 8 })
+    }, { index: 6 })
   });
 
   modelClass.defineProjection('ПокупкаL', 'i-i-s-kursovaya7-покупка', {
     сумма: attr('Сумма', { index: 0 }),
-    количество: attr('Количество', { index: 1 })
+    количество: attr('Количество', { index: 1 }),
+    базаКлиента: belongsTo('i-i-s-kursovaya7-база-клиента', 'Логин', {
+      логин: attr('Логин', { index: 2 })
+    }, { index: -1, hidden: true }),
+    остаток: belongsTo('i-i-s-kursovaya7-остаток', 'Колво', {
+      колво: attr('Колво', { index: 3 })
+    }, { index: -1, hidden: true }),
+    ценноваяСтела: belongsTo('i-i-s-kursovaya7-ценновая-стела', 'Наименование', {
+      наименование: attr('Наименование', { index: 4 }),
+      цена: attr('Цена', { index: 5 })
+    }, { index: -1, hidden: true })
   });
 };

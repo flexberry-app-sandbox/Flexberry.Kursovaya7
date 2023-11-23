@@ -33,14 +33,16 @@ namespace IIS.Kursovaya7
             "Состояние as \'Состояние\'",
             "IdР as \'Id Р\'",
             "Остаток as \'Остаток\'",
-            "Остаток.Номер as \'Номер\'"}, Hidden=new string[] {
+            "Остаток.Номер as \'Номер\'",
+            "Остаток.Колво as \'Колво\'"}, Hidden=new string[] {
             "Остаток.Номер"})]
     [MasterViewDefineAttribute("РезервуарE", "Остаток", ICSSoft.STORMNET.LookupTypeEnum.Standard, "", "Номер")]
     [View("РезервуарL", new string[] {
             "КолвоТоп as \'Колво топ\'",
             "Состояние as \'Состояние\'",
             "IdР as \'Id Р\'",
-            "Остаток.Номер as \'Номер\'"})]
+            "Остаток.Номер as \'Номер\'",
+            "Остаток.Колво as \'Колво\'"})]
     public class Резервуар : ICSSoft.STORMNET.DataObject
     {
         

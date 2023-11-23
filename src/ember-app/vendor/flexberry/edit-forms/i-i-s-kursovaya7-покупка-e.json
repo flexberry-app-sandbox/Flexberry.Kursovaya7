@@ -1,5 +1,30 @@
 ﻿{
-  "propertyLookup": [],
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "БазаКлиента",
+      "projection": "БазаКлиентаL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Остаток",
+      "projection": "ОстатокL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "ЦенноваяСтела",
+      "projection": "ЦенноваяСтелаL",
+      "detailModelName": null
+    }
+  ],
   "external": false,
   "caption": "Покупка",
   "name": "IISKursovaya7ПокупкаE",

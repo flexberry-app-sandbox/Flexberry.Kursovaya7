@@ -72,4 +72,14 @@
     }}
     {{flexberry-validationmessage error=(v-get validationModel "остаток" "message")}}
   </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=true
+      value=model.остаток.колво
+      class=(if (v-get validationModel.остаток "колво" "isInvalid") "error")
+      label=(t "forms.i-i-s-kursovaya7-резервуар-e.остаток.колво-caption")
+      data-test-i-i-s-kursovaya7-резервуар-e-остаток-колво=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationModel.остаток "колво" "message")}}
+  </div>
 </form>

@@ -22,11 +22,11 @@ public class Pokupka {
     @Column(name = "primarykey", length = 16, unique = true, nullable = false)
     private UUID primarykey;
 
-    @Column(name = "Сумма")
-    private Double сумма;
-
     @Column(name = "Количество")
     private Double количество;
+
+    @Column(name = "Сумма")
+    private Double сумма;
 
     @EdmIgnore
     @Converter(converterClass = UUIDConverter.class, name = "Ostatok")
@@ -71,20 +71,20 @@ public class Pokupka {
         return primarykey;
     }
 
-    public Double getСумма() {
-      return сумма;
-    }
-
-    public void setСумма(Double сумма) {
-      this.сумма = сумма;
-    }
-
     public Double getКоличество() {
       return количество;
     }
 
     public void setКоличество(Double количество) {
       this.количество = количество;
+    }
+
+    public Double getСумма() {
+      return сумма;
+    }
+
+    public void setСумма(Double сумма) {
+      this.сумма = сумма;
     }
 
 
