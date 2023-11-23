@@ -46,6 +46,13 @@
       "name": "ценноваяСтела",
       "relatedTo": "i-i-s-kursovaya7-ценновая-стела",
       "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "автоматизация",
+      "relatedTo": "i-i-s-kursovaya7-автоматизация",
+      "inverse": "покупка"
     }
   ],
   "hasMany": [],

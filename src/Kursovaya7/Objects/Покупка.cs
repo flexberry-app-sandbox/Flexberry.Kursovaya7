@@ -58,6 +58,8 @@ namespace IIS.Kursovaya7
         
         private IIS.Kursovaya7.ЦенноваяСтела fЦенноваяСтела;
         
+        private IIS.Kursovaya7.Автоматизация fАвтоматизация;
+        
         // *** Start programmer edit section *** (Покупка CustomMembers)
 
         // *** End programmer edit section *** (Покупка CustomMembers)
@@ -228,6 +230,41 @@ namespace IIS.Kursovaya7
         }
         
         /// <summary>
+        /// мастеровая ссылка на шапку IIS.Kursovaya7.Автоматизация.
+        /// </summary>
+        // *** Start programmer edit section *** (Покупка.Автоматизация CustomAttributes)
+
+        // *** End programmer edit section *** (Покупка.Автоматизация CustomAttributes)
+        [Agregator()]
+        [NotNull()]
+        [PropertyStorage(new string[] {
+                "Автоматизация"})]
+        public virtual IIS.Kursovaya7.Автоматизация Автоматизация
+        {
+            get
+            {
+                // *** Start programmer edit section *** (Покупка.Автоматизация Get start)
+
+                // *** End programmer edit section *** (Покупка.Автоматизация Get start)
+                IIS.Kursovaya7.Автоматизация result = this.fАвтоматизация;
+                // *** Start programmer edit section *** (Покупка.Автоматизация Get end)
+
+                // *** End programmer edit section *** (Покупка.Автоматизация Get end)
+                return result;
+            }
+            set
+            {
+                // *** Start programmer edit section *** (Покупка.Автоматизация Set start)
+
+                // *** End programmer edit section *** (Покупка.Автоматизация Set start)
+                this.fАвтоматизация = value;
+                // *** Start programmer edit section *** (Покупка.Автоматизация Set end)
+
+                // *** End programmer edit section *** (Покупка.Автоматизация Set end)
+            }
+        }
+        
+        /// <summary>
         /// Class views container.
         /// </summary>
         public class Views
@@ -254,6 +291,48 @@ namespace IIS.Kursovaya7
                     return ICSSoft.STORMNET.Information.GetView("ПокупкаL", typeof(IIS.Kursovaya7.Покупка));
                 }
             }
+        }
+    }
+    
+    /// <summary>
+    /// Detail array of Покупка.
+    /// </summary>
+    // *** Start programmer edit section *** (DetailArrayDetailArrayOfПокупка CustomAttributes)
+
+    // *** End programmer edit section *** (DetailArrayDetailArrayOfПокупка CustomAttributes)
+    public class DetailArrayOfПокупка : ICSSoft.STORMNET.DetailArray
+    {
+        
+        // *** Start programmer edit section *** (IIS.Kursovaya7.DetailArrayOfПокупка members)
+
+        // *** End programmer edit section *** (IIS.Kursovaya7.DetailArrayOfПокупка members)
+
+        
+        /// <summary>
+        /// Construct detail array.
+        /// </summary>
+        /// <summary>
+        /// Returns object with type Покупка by index.
+        /// </summary>
+        /// <summary>
+        /// Adds object with type Покупка.
+        /// </summary>
+        public DetailArrayOfПокупка(IIS.Kursovaya7.Автоматизация fАвтоматизация) : 
+                base(typeof(Покупка), ((ICSSoft.STORMNET.DataObject)(fАвтоматизация)))
+        {
+        }
+        
+        public IIS.Kursovaya7.Покупка this[int index]
+        {
+            get
+            {
+                return ((IIS.Kursovaya7.Покупка)(this.ItemByIndex(index)));
+            }
+        }
+        
+        public virtual void Add(IIS.Kursovaya7.Покупка dataobject)
+        {
+            this.AddObject(((ICSSoft.STORMNET.DataObject)(dataobject)));
         }
     }
 }

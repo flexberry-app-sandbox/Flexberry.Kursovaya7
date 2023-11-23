@@ -9,7 +9,8 @@ export let Model = Mixin.create({
   сумма: DS.attr('decimal'),
   базаКлиента: DS.belongsTo('i-i-s-kursovaya7-база-клиента', { inverse: null, async: false }),
   остаток: DS.belongsTo('i-i-s-kursovaya7-остаток', { inverse: null, async: false }),
-  ценноваяСтела: DS.belongsTo('i-i-s-kursovaya7-ценновая-стела', { inverse: null, async: false })
+  ценноваяСтела: DS.belongsTo('i-i-s-kursovaya7-ценновая-стела', { inverse: null, async: false }),
+  автоматизация: DS.belongsTo('i-i-s-kursovaya7-автоматизация', { inverse: 'покупка', async: false })
 });
 
 export let ValidationRules = {
@@ -43,6 +44,13 @@ export let ValidationRules = {
   },
   ценноваяСтела: {
     descriptionKey: 'models.i-i-s-kursovaya7-покупка.validations.ценноваяСтела.__caption__',
+    validators: [
+      validator('ds-error'),
+      validator('presence', true),
+    ],
+  },
+  автоматизация: {
+    descriptionKey: 'models.i-i-s-kursovaya7-покупка.validations.автоматизация.__caption__',
     validators: [
       validator('ds-error'),
       validator('presence', true),

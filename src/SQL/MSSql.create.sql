@@ -17,6 +17,15 @@ CREATE TABLE [Резервуар] (
 	 PRIMARY KEY ([primaryKey]))
 
 
+CREATE TABLE [Автоматизация] (
+
+	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Номер] INT  NULL,
+
+	 PRIMARY KEY ([primaryKey]))
+
+
 CREATE TABLE [Покупка] (
 
 	 [primaryKey] UNIQUEIDENTIFIER  NOT NULL,
@@ -30,6 +39,8 @@ CREATE TABLE [Покупка] (
 	 [Остаток] UNIQUEIDENTIFIER  NOT NULL,
 
 	 [ЦенноваяСтела] UNIQUEIDENTIFIER  NOT NULL,
+
+	 [Автоматизация] UNIQUEIDENTIFIER  NOT NULL,
 
 	 PRIMARY KEY ([primaryKey]))
 

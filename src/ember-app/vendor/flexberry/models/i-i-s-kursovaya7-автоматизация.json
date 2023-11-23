@@ -1,0 +1,31 @@
+﻿{
+  "name": "IISKursovaya7Автоматизация",
+  "modelName": "i-i-s-kursovaya7-автоматизация",
+  "className": "Автоматизация",
+  "nameSpace": "IIS.Kursovaya7",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "номер",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [
+    {
+      "name": "покупка",
+      "relatedTo": "i-i-s-kursovaya7-покупка",
+      "inverse": "автоматизация"
+    }
+  ],
+  "projections": [],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

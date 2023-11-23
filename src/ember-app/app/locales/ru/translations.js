@@ -11,6 +11,7 @@ import IISKursovaya7ОстатокEForm from './forms/i-i-s-kursovaya7-оста�
 import IISKursovaya7ПокупкаEForm from './forms/i-i-s-kursovaya7-покупка-e';
 import IISKursovaya7РезервуарEForm from './forms/i-i-s-kursovaya7-резервуар-e';
 import IISKursovaya7ЦенноваяСтелаEForm from './forms/i-i-s-kursovaya7-ценновая-стела-e';
+import IISKursovaya7АвтоматизацияModel from './models/i-i-s-kursovaya7-автоматизация';
 import IISKursovaya7БазаКлиентаModel from './models/i-i-s-kursovaya7-база-клиента';
 import IISKursovaya7ОстатокModel from './models/i-i-s-kursovaya7-остаток';
 import IISKursovaya7ПокупкаModel from './models/i-i-s-kursovaya7-покупка';
@@ -22,6 +23,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
+    'i-i-s-kursovaya7-автоматизация': IISKursovaya7АвтоматизацияModel,
     'i-i-s-kursovaya7-база-клиента': IISKursovaya7БазаКлиентаModel,
     'i-i-s-kursovaya7-остаток': IISKursovaya7ОстатокModel,
     'i-i-s-kursovaya7-покупка': IISKursovaya7ПокупкаModel,

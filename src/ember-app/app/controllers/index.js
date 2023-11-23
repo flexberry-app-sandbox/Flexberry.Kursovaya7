@@ -22,30 +22,31 @@ export default Controller.extend({
             link: 'i-i-s-kursovaya7-резервуар-l',
             caption: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-резервуар-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-резервуар-l.title'),
+            icon: 'chart line',
             children: null
           }, {
             link: 'i-i-s-kursovaya7-покупка-l',
             caption: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-покупка-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-покупка-l.title'),
-            icon: 'folder',
+            icon: 'phone',
             children: null
           }, {
             link: 'i-i-s-kursovaya7-остаток-l',
             caption: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-остаток-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-остаток-l.title'),
-            icon: 'address card',
+            icon: 'list',
             children: null
           }, {
             link: 'i-i-s-kursovaya7-база-клиента-l',
             caption: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-база-клиента-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-база-клиента-l.title'),
-            icon: 'briefcase',
+            icon: 'paperclip',
             children: null
           }, {
             link: 'i-i-s-kursovaya7-ценновая-стела-l',
             caption: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-ценновая-стела-l.caption'),
             title: i18n.t('forms.application.sitemap.kursovaya7.i-i-s-kursovaya7-ценновая-стела-l.title'),
-            icon: 'calendar',
+            icon: 'tags',
             children: null
           }]
         }

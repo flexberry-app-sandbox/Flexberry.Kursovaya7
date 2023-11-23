@@ -1,6 +1,6 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('i-i-s-kursovaya7-остаток', 'Unit | Model | i-i-s-kursovaya7-остаток', {
+moduleForModel('i-i-s-kursovaya7-автоматизация', 'Unit | Model | i-i-s-kursovaya7-автоматизация', {
   // Specify the other units that are required for this test.
   needs: [
     'model:i-i-s-kursovaya7-автоматизация',

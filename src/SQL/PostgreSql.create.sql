@@ -12,6 +12,12 @@ CREATE TABLE Резервуар (
  PRIMARY KEY (primaryKey));
 
 
+CREATE TABLE Автоматизация (
+ primaryKey UUID NOT NULL,
+ Номер INT NULL,
+ PRIMARY KEY (primaryKey));
+
+
 CREATE TABLE Покупка (
  primaryKey UUID NOT NULL,
  Количество DOUBLE PRECISION NULL,
@@ -19,6 +25,7 @@ CREATE TABLE Покупка (
  Остаток UUID NOT NULL,
  БазаКлиента UUID NOT NULL,
  ЦенноваяСтела UUID NOT NULL,
+ Автоматизация UUID NOT NULL,
  PRIMARY KEY (primaryKey));
 
 
@@ -160,6 +167,9 @@ CREATE INDEX Index3ca64a4a756c68cf30a6082d5590081949c0f8ee on Покупка (Б
 
  ALTER TABLE Покупка ADD CONSTRAINT FK9df86c62646a5bba7ec95c58b0eeeecc93f019b6 FOREIGN KEY (ЦенноваяСтела) REFERENCES ЦенноваяСтела; 
 CREATE INDEX Index9df86c62646a5bba7ec95c58b0eeeecc93f019b6 on Покупка (ЦенноваяСтела); 
+
+ ALTER TABLE Покупка ADD CONSTRAINT FK02ded9982e9c0f450acd35aeda8eb21f7a768eb1 FOREIGN KEY (Автоматизация) REFERENCES Автоматизация; 
+CREATE INDEX Index02ded9982e9c0f450acd35aeda8eb21f7a768eb1 on Покупка (Автоматизация); 
 
  ALTER TABLE STORMWEBSEARCH ADD CONSTRAINT FKc4378e39870eb056aec84088683297a01d2a6200 FOREIGN KEY (FilterSetting_m0) REFERENCES STORMFILTERSETTING; 
 

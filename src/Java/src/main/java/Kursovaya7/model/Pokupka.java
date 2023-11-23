@@ -58,6 +58,16 @@ public class Pokupka {
     @JoinColumn(name = "CennovayaStela", insertable = false, updatable = false)
     private CennovayaStela cennovayastela;
 
+    @EdmIgnore
+    @Converter(converterClass = UUIDConverter.class, name = "Avtomatizaciya")
+    @Convert("Avtomatizaciya")
+    @Column(name = "Автоматизация", length = 16, unique = true, nullable = false)
+    private UUID _avtomatizaciyaid;
+
+    @ManyToOne(optional = false, fetch = FetchType.LAZY)
+    @JoinColumn(name = "Avtomatizaciya", insertable = false, updatable = false)
+    private Avtomatizaciya avtomatizaciya;
+
 
     public Pokupka() {
         super();

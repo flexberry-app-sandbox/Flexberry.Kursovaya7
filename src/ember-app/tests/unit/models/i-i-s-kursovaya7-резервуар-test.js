@@ -3,6 +3,7 @@ import { moduleForModel, test } from 'ember-qunit';
 moduleForModel('i-i-s-kursovaya7-резервуар', 'Unit | Model | i-i-s-kursovaya7-резервуар', {
   // Specify the other units that are required for this test.
   needs: [
+    'model:i-i-s-kursovaya7-автоматизация',
     'model:i-i-s-kursovaya7-база-клиента',
     'model:i-i-s-kursovaya7-остаток',
     'model:i-i-s-kursovaya7-покупка',

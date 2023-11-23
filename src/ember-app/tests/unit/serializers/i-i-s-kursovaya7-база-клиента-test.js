@@ -11,6 +11,7 @@ moduleForModel('i-i-s-kursovaya7-база-клиента', 'Unit | Serializer | 
 
     'transform:i-i-s-kursovaya7-состояния',
 
+    'model:i-i-s-kursovaya7-автоматизация',
     'model:i-i-s-kursovaya7-база-клиента',
     'model:i-i-s-kursovaya7-остаток',
     'model:i-i-s-kursovaya7-покупка',
