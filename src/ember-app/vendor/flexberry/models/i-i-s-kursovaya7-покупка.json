@@ -1,0 +1,97 @@
+﻿{
+  "name": "IISKursovaya7Покупка",
+  "modelName": "i-i-s-kursovaya7-покупка",
+  "className": "Покупка",
+  "nameSpace": "IIS.Kursovaya7",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "количество",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "сумма",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "базаКлиента",
+      "relatedTo": "i-i-s-kursovaya7-база-клиента",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "остаток",
+      "relatedTo": "i-i-s-kursovaya7-остаток",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "ценноваяСтела",
+      "relatedTo": "i-i-s-kursovaya7-ценновая-стела",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПокупкаE",
+      "modelName": "i-i-s-kursovaya7-покупка",
+      "attrs": [
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ПокупкаL",
+      "modelName": "i-i-s-kursovaya7-покупка",
+      "attrs": [
+        {
+          "name": "сумма",
+          "caption": "Сумма",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "количество",
+          "caption": "Количество",
+          "hidden": false,
+          "index": 1
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Остаток",
+  "name": "IISKursovaya7ОстатокE",
+  "className": "ОстатокE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya7-остаток",
+      "modelProjection": "ОстатокE"
+    }
+  ]
+}

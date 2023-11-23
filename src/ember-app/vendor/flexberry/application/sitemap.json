@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "Kursovaya7",
+  "applicationTitle": "Kursovaya7",
+  "items": [
+    {
+      "link": null,
+      "menuName": "kursovaya7",
+      "caption": "Kursovaya7",
+      "title": "Kursovaya7",
+      "children": [
+        {
+          "link": "i-i-s-kursovaya7-резервуар-l",
+          "menuName": null,
+          "caption": "Резервуар",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya7-покупка-l",
+          "menuName": null,
+          "caption": "Покупка",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya7-остаток-l",
+          "menuName": null,
+          "caption": "Остаток",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya7-база-клиента-l",
+          "menuName": null,
+          "caption": "База клиента",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-kursovaya7-ценновая-стела-l",
+          "menuName": null,
+          "caption": "Ценновая стела",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

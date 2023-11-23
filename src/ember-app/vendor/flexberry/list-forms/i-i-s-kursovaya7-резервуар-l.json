@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya7-резервуар-e",
+  "editForm": "i-i-s-kursovaya7-резервуар-e",
+  "external": false,
+  "caption": "Резервуар",
+  "name": "IISKursovaya7РезервуарL",
+  "className": "РезервуарL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya7-резервуар",
+      "modelProjection": "РезервуарL"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Покупка",
+  "name": "IISKursovaya7ПокупкаE",
+  "className": "ПокупкаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya7-покупка",
+      "modelProjection": "ПокупкаE"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-kursovaya7-остаток-e",
+  "editForm": "i-i-s-kursovaya7-остаток-e",
+  "external": false,
+  "caption": "Остаток",
+  "name": "IISKursovaya7ОстатокL",
+  "className": "ОстатокL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-kursovaya7-остаток",
+      "modelProjection": "ОстатокL"
+    }
+  ]
+}

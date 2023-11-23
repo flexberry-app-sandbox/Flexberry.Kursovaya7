@@ -1,0 +1,1 @@
+docker-compose -p kursovaya7 down
